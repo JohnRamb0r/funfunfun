@@ -1,0 +1,25 @@
+{
+  "name": "homework_2",
+  "version": "0.2.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnRamb0r/funfunfun.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/JohnRamb0r/funfunfun/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jshint": "~1.11.0",
+    "gulp-changed": "~1.2.1",
+    "gulp-imagemin": "~2.2.1",
+    "gulp-minify-html": "~1.0.3"
+  }
+}
