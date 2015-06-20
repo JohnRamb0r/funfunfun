@@ -1,0 +1,133 @@
+
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "myvariables";
+@import "myfonts";
+
+@import "mymixins";
+
+$mobile-breakpoint: new-breakpoint(max-width 768px 4);
+
+
+body {
+  background: lighten($main-color, 50%);
+  p {
+
+  }
+  font-family: 'Oswald', sans-serif;
+
+}
+
+h1 h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar{
+  opacity: 0.8;
+  background-color: lighten($second-color, 35%);
+  @include rounded(5px);
+  margin-left: 5px;
+  ul{
+    h2{
+      padding: 5px;
+    }
+  }
+
+}
+li{
+  list-style: none;
+}
+
+
+header{
+
+
+  padding: 15px;
+}
+
+
+footer{
+  background-color: #333;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  section{
+    color: $second-color;
+  }
+}
+
+@include media($mobile-breakpoint) {
+  .sidebar{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  footer{
+    position: relative;
+
+  }
+
+}
+
+#social{
+  float: left;
+  margin: 5px;
+  margin-left: 35px !important;
+
+  #tw{
+    background-position: 0 0;
+  }
+
+  #tw:hover{
+    background-position: 0 -23px;
+  }
+
+  #fb{
+    background-position: -23px 0;
+  }
+
+  #fb:hover{
+    background-position: -23px -23px;
+  }
+
+  #rss{
+    background-position: -46px 0;
+  }
+
+  #rss:hover{
+    background-position: -46px -23px;
+  }
+
+  #plus{
+    background-position: -69px 0;
+  }
+
+  #plus:hover {
+    background-position: -69px -69px;
+
+  }
+}
+
+#social li {
+  float: left;
+  border-bottom: none !important;
+  list-style-type: none !important;
+}
+
+#social li a{
+  float: left;
+  height: 23px;
+  width: 23px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('../assets/img/social-icons.png');
+}
+
+
+.fix-img {
+  img{
+    width: 50%;
+    height: auto;
+  }
+
+}
